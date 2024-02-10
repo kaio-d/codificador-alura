@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <a href="./index.html">
+        <img src="./src/imagens/logo.png" alt="Logo da Alura" />
+      </a>
+
+      <div class="container-secao">
+        <section class="formulario">
+          <input id="entrada" type="text" placeholder="Digite seu texto" />
+          <div class="modificar">
+            <div class="aviso">
+              <img src="./src/imagens/aviso.svg" alt="Ponto de exclamação" />
+              <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <button
+              type="button"
+              id="criptografar"
+              class="button"
+              onclick="codificar()"
+            >
+              Criptografar
+            </button>
+            <button
+              type="button"
+              id="descriptografar"
+              class="button"
+              onclick="descodificar()"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </section>
+
+        <section id="saida-dados">
+          <div class="container-saida">
+            <div class="conteudo-js">
+              <h2 id="texto-normal"></h2>
+              <button class="button" id="copiar" onclick="copiarConteudo()">Copiar</button>
+            </div>
+            <div class="imagem-saida">
+              <img
+                class="imagem-lupa"
+                src="./src/imagens/lupa.svg"
+                alt="Mulher olhando um diamante"
+              />
+            </div>
+            <div class="informacoes">
+              <h3 class="subtitulo-saida">Nenhuma mensagem encontrada</h3>
+              <p class="paragrafo-saida">
+                Digite um texto que você deseja criptografar ou descriptografar.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./src/js/index.js" defer></script>
+  </body>
+</html>

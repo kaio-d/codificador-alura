@@ -1,0 +1,203 @@
+@import url("./reset.css");
+
+a img {
+  margin: 40px;
+}
+
+.container-secao {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#detalhes {
+  display: flex;
+  flex-direction: column;
+}
+
+#entrada {
+  border: none;
+  background-color: transparent;
+  margin: 80px 0 0 240px;
+  width: 40%;
+  height: 48px;
+  font-size: 2rem;
+  color: #0a3871;
+}
+
+#entrada::placeholder {
+  color: #0a3871;
+  font-size: 2rem;
+}
+
+.modificar {
+  margin: 500px 0 0 240px;
+}
+
+.aviso {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aviso p {
+  font-size: 0.75rem;
+  color: #495057;
+}
+
+.button {
+  padding: 24px;
+  width: 328px;
+  border-radius: 24px;
+  border: none;
+  font-size: 1rem;
+  color: #0a3871;
+  cursor: pointer;
+}
+
+#criptografar {
+  background-color: #0a3871;
+  color: #fff;
+  margin-right: 24px;
+}
+
+#descriptografar {
+  background-color: #d8dfe8;
+}
+
+.container-saida {
+  background-color: #fff;
+  height: 80vh;
+  border-radius: 32px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacoes {
+  width: 394px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.subtitulo-saida {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.paragrafo-saida {
+  font-size: 1rem;
+  color: #495057;
+}
+
+/* JS */
+.hidden {
+  display: none;
+}
+
+#texto-normal {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  max-width: 394px;
+  color: #495057;
+  text-align: left;
+  word-wrap: break-word;
+  align-self: flex-start;
+}
+
+#copiar {
+  display: none;
+  background-color: transparent;
+  border: 1px solid #0a3871;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  a img {
+    margin-left: 0;
+  }
+
+  .container-secao {
+    flex-direction: column;
+  }
+
+  #entrada,
+  .modificar {
+    margin-left: 40px;
+  }
+
+  #entrada {
+    width: 80%;
+  }
+
+  .imagem-lupa {
+    display: none;
+  }
+
+  #criptografar {
+    margin-bottom: 24px;
+  }
+
+  .container-saida {
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    height: 186px;
+    margin: 64px auto;
+  }
+
+  .informacoes {
+    max-width: 327px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  a img {
+    margin-left: 0;
+  }
+
+  #entrada,
+  .modificar {
+    margin-left: 40px;
+  }
+
+  .container-secao {
+    flex-direction: column;
+  }
+
+  .imagem-lupa {
+    display: none;
+  }
+
+  .container-saida {
+    display: flex;
+    flex-direction: column;
+    width: 688px;
+    height: 243px;
+    margin: 64px auto;
+  }
+
+  .informacoes {
+    max-width: 400px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #criptografar {
+    margin-bottom: 24px;
+  }
+
+  .informacoes {
+    max-width: 300px;
+    margin-top: 0px;
+  }
+
+  .container-saida {
+    margin-right: 5%;
+  }
+}

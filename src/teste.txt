@@ -1,0 +1,12 @@
+#saida-dados{
+  display: flex;
+}
+
+#texto-normal {
+  font-size: 1.5rem;
+  max-width: 394px;
+  color: #495057;
+  text-align: left;
+  word-wrap: break-word;
+  align-self: flex-start;
+}
