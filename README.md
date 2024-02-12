@@ -3,7 +3,7 @@
 O projeto consiste na criação de uma página Web, utilizando HTML, CSS e JavaScript, buscando praticar os conceitos ensinados durante a trila básica de programação da <a href="https://www.alura.com.br/"> Alura</a>
 </p>
 
-<a href="https://micheleambrosio.github.io/hbomax/">
+<a href="#">
   <img src="./.github/preview.png">
 </a>
 
